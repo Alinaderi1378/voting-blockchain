@@ -11,6 +11,7 @@ const validatevoter=(data)=>{
     });
     return schema.validate(data);
 }
+
 const validateUpdateVoter = (data) => {
     const schema = Joi.object({
         phone: Joi.string().required(),
