@@ -16,8 +16,6 @@ const validateUpdateVoter = (data) => {
         phone: Joi.string().required(),
         natinalId: Joi.string().required(),
         isvote: Joi.boolean().required().default(false)
-
-
     });
     return schema.validate(data);
 }
